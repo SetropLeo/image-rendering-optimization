@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Import CSS file -->
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- <h1>Image Gallery</h1>
+      <div id="gallery"></div>
+      <div id="popup">
+        <div class="popup-bg"></div>
+        <div class="popup-content">
+          <img id="selectedImage" />
+        </div>
+      </div> -->
+
+      <img
+        loading="lazy"
+        srcset="
+          ../images/image-1.jpg?width=100 100w,
+          ../images/image-1.jpg?width=200 200w,
+          ../images/image-1.jpg?width=400 400w,
+          ../images/image-1.jpg?width=800 800w
+        "
+        sizes="(max-width: 800px) 100vw,
+      50vw"
+        src="../images/image-1.jpg"
+      />
+    </div>
+
+    <!-- Import JS file -->
+    <script src="./app.js"></script>
+  </body>
+</html>
